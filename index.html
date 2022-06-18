@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+            <img src="./imagens/logo.png" alt="logo alura">
+    </header>
+
+    <main>
+        <div class="container-entrada-saida">
+            
+            <div class="container-entrada">
+                <label for="entrada-cripto"></label>
+                <textarea name="entrada-cripto" id="entrada-cripto" cols="70" rows="10" 
+                    placeholder="Digite seu texto" autofocus></textarea>
+
+                <p><img src="./imagens/exclamacao.png" alt="Exclamação">Apenas letras sem acento / Letras maiúsculas serão convertidas para minúsculas.</p>
+                <input class="botao-criptografar" type="submit" value="Criptografar">
+                <input class="botao-descriptografar" type="submit" value="Descriptografar">
+            </div>
+            
+            <div class="container-saida">
+
+                <div id="resultado-cripto">
+                    <p class="texto-cripto-descripto">Nenhuma mensagem encontrada</p>
+                    <span class="retirar">Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+            
+            </div>
+
+            <div class="container-saida-resultado"><input class="btn-copiar" 
+                type="submit" value="Copiar"></div>
+            
+        </div>
+
+        <div class="button">
+            
+        </div>
+    </main>
+    <script src="./js/principal.js"></script>
+    <script src="./js/criptografar.js"></script>
+    <script src="./js/descriptografar.js"></script>
+</body>
+</html>
